@@ -2,7 +2,6 @@ import discord
 import math
 import os
 
-token = 'ODUxOTk1NTQyMTQ4ODc0MzAx.YMAYrg.bH3WDE-O3kjGftlpKfmOnwSrHxk'
 client = discord.Client()
 
 # 봇이 구동되었을 때 보여지는 코드
@@ -39,4 +38,4 @@ async def on_message(message):
         #await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은")
 
 access_token = os.environ["token"]
-client.run(token)
+client.run(access_token)
