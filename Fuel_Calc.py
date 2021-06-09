@@ -37,4 +37,5 @@ async def on_message(message):
         await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은 " + str(int(fuel) + math.ceil(float(msg_l[4]) * 2)) + "L 입니다.")
         #await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은")
 
-client.run(os.environ["HEROKU_TOKEN"])
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
