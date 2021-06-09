@@ -1,5 +1,6 @@
 import discord
 import math
+import asyncio
 
 token = 'ODUxOTk1NTQyMTQ4ODc0MzAx.YMAYrg.b1eXkGhPlATPN5jPKpftPdh8HZg'
 client = discord.Client()
