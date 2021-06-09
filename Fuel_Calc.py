@@ -1,5 +1,6 @@
 import discord
 import math
+import os
 
 token = 'ODUxOTk1NTQyMTQ4ODc0MzAx.YMAYrg.bH3WDE-O3kjGftlpKfmOnwSrHxk'
 client = discord.Client()
@@ -37,4 +38,5 @@ async def on_message(message):
         await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은 " + str(int(fuel) + math.ceil(float(msg_l[4]) * 2)) + "L 입니다.")
         #await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은")
 
+access_token = os.environ["token"]
 client.run(token)
