@@ -1,7 +1,7 @@
 import discord
 import math
-import os
 
+token = 'ODUxOTk1NTQyMTQ4ODc0MzAx.YMAYrg.b1eXkGhPlATPN5jPKpftPdh8HZg'
 client = discord.Client()
 
 # 봇이 구동되었을 때 보여지는 코드
@@ -37,5 +37,4 @@ async def on_message(message):
         await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은 " + str(int(fuel) + math.ceil(float(msg_l[4]) * 2)) + "L 입니다.")
         #await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은")
 
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+client.run(token)
