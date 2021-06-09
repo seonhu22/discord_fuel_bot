@@ -3,7 +3,6 @@ import math
 import os
 import asyncio
 
-token = 'ODUxOTk1NTQyMTQ4ODc0MzAx.YMAYrg.b1eXkGhPlATPN5jPKpftPdh8HZg'
 client = discord.Client()
 
 # 봇이 구동되었을 때 보여지는 코드
