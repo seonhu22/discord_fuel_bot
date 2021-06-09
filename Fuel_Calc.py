@@ -35,7 +35,7 @@ async def on_message(message):
         else:
             await message.channel.send("내용을 입력해주세요!")
             return
-        await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은 " + str(int(fuel) + math.ceil(float(msg_l[4]))) + "L 입니다.")
+        await message.channel.send(str(fuel + math.ceil(float(msg_l[4]))) + "L가 정확하며 안전 권장량은 " + str(fuel + math.ceil(float(msg_l[4]))) + math.ceil(float(msg_l[4])) + "L 입니다.")
         #await message.channel.send(str(fuel) + "L가 정확하며 안전 권장량은")
 
 client.run(os.environ['TOKEN'])
